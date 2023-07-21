@@ -35,4 +35,11 @@
     <string name="todo_dialog_category_other">Otros</string>
     <string name="todo_dialog_category_personal">Personal</string>
     <string name="todo_dialog_add_task_button">Crear tarea</string>
+
+<!--    Menu-->
+    <string name="menu_saludar_app">Saludar App</string>
+    <string name="menu_imc_app">Imc App</string>
+    <string name="menu_todo_app">Todo App</string>
+    <string name="menu_superhero_app">SuperHero App</string>
+    <string name="menu_settings">Settings</string>
 </resources>

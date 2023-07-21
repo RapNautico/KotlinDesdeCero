@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.cardview.widget.CardView
 import com.ema.emaaprende.firstapp.FirstAppActivity
 import com.ema.emaaprende.imccalculator.ImcCalculatorActivity
 import com.ema.emaaprende.settings.SettingsActivity
@@ -15,17 +16,17 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
 
-        val btnSaludApp = findViewById<Button>(R.id.btnSaludApp)
-        val btnImcApp = findViewById<Button>(R.id.btnIMCApp)
-        val btnTodoApp = findViewById<Button>(R.id.btnTodoApp)
-        val btnSuperHeroApp = findViewById<Button>(R.id.btnSuperHeroApp)
-        val btnSettings = findViewById<Button>(R.id.btnSettings)
+        val viewSaludapp = findViewById<CardView>(R.id.viewSaludapp)
+        val viewIMC = findViewById<CardView>(R.id.viewIMC)
+        val viewTodoapp = findViewById<CardView>(R.id.viewTodoapp)
+        val viewSuperHeroApp = findViewById<CardView>(R.id.viewSuperHeroApp)
+        val viewHeight = findViewById<CardView>(R.id.viewHeight)
 
-        btnSaludApp.setOnClickListener { navigateToSaludApp() }
-        btnImcApp.setOnClickListener { navigateToImcApp() }
-        btnTodoApp.setOnClickListener { navigateToTodoApp() }
-        btnSuperHeroApp.setOnClickListener { navigateToSuperheroApp() }
-        btnSettings.setOnClickListener { navigateToSettings() }
+        viewSaludapp.setOnClickListener { navigateToSaludApp() }
+        viewIMC.setOnClickListener { navigateToImcApp() }
+        viewTodoapp.setOnClickListener { navigateToTodoApp() }
+        viewSuperHeroApp.setOnClickListener { navigateToSuperheroApp() }
+        viewHeight.setOnClickListener { navigateToSettings() }
     }
 
     private fun navigateToSettings() {
